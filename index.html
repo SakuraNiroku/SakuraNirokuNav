@@ -31,7 +31,7 @@
     <script>
         if(getQueryVariable("search") != false){
             if(getQueryVariable("search") != ""){
-                stxt = getQueryVariable("search")
+                stxt = getQueryVariable("search").toLowerCase()
                 resl = Object.keys(site).filter((key,_)=>{
                     if(key.includes(stxt)){
                         return true
